@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id":"github.com/jtomasevic/event-sphere/entitlement",
+  "type": "object",
+  "properties": {
+    "entitlementUUID": {
+      "type": "string"
+    },
+    "shooperID": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "certrtificate": {
+      "type": "object",
+      "properties": {
+        "cert": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "cert"
+      ]
+    }
+  },
+  "required": [
+    "entitlementUUID",
+    "certrtificate"
+  ]
+}
